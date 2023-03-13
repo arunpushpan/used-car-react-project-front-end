@@ -16,10 +16,14 @@ function Header() {
               height="40"
               className="d-inline-block align-top"
               style={{borderRadius:'50%'}}
-            />{' '} +91 9876543210
+            />{' '} <i class="fa-solid fa-phone ms-3"></i> <span class="text-info">+91 9876543210 </span>- Feel free to contact us at any time
 <p>
-             <h1> BRONZE <span class="text-info">Cars</span></h1>
-</p>            </Navbar.Brand>
+<span>
+               <h1 > BRONZE <span class="text-info">Cars</span></h1>
+
+</span>         </p>
+        
+</Navbar.Brand>
         </Container>
       </Navbar>
     </div>

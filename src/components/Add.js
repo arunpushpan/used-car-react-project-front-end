@@ -44,11 +44,12 @@ const result = await axios.post('http://localhost:8000/add-car',body)
   location('/Admin')
 }
   return (
+    <div class="container">
     <div className=' row ' >
       <div style={{height:'110px'}}></div>
 
       <div className='col-6 image_side text-center text-light' >
-<h1 class="mt-5 p-5">BRONZE CARS</h1>
+<h1 class="mt-5 p-5">BRONZE <span class="text-info">Cars</span></h1>
 <h2>Cars! Bikes! SUVs!</h2>
       </div>
         <div className=' mt-3  p-5 border rounded col-6 bg-secondary text-light' >
@@ -149,6 +150,7 @@ const result = await axios.post('http://localhost:8000/add-car',body)
     </div>
 
    
+    </div>
     </div>
   )
 }

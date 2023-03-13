@@ -86,7 +86,10 @@ const fetchData = async () => {
 	<div class="row " id="ads">
   {
     allCars?.map((item)=>(
+
     <div class="column col-md-4">
+                            <Link to={'view/'+item.id}>
+
         <div class="card rounded m-4">
             <div class="card-image">
                 <span class="card-notify-badge">{item.fuel}</span>
@@ -98,19 +101,20 @@ const fetchData = async () => {
                 <span class="card-detail-badge">{item.kms} Kms</span>
             </div>
             <div class="card-body text-center">
-                <div class="ad-title m-auto">
-                    <h4>{item.name}</h4>
+                <div class="ad-title m-auto " style={{textDecoration:'none'}}>
+                    <h4 class="text-dark">{item.name}</h4>
                     <h5>{item.make}</h5>
 
                 </div>
                 {/* <a class="ad-btn" href="#">View</a> */}
-                <Link to={'view/'+item.id}>
-             <button className='btn btn-outline-primary'>View More Details</button>
+             {/* <button className='btn btn-outline-primary'>View More Details</button> */}
 
- </Link  >
             </div>
         </div>
+             </Link  >
+
     </div>
+
 ))
    
 }
@@ -121,7 +125,7 @@ const fetchData = async () => {
 
  {/* customers */}
  <section class="testimonials text-center bg-light">
-            <div class="container mb-4 mt-5">
+            <div class="container test_card mb-4 mt-5">
                 <h2 class="mb-5">Listen to our valuable Customers!</h2>
                 <div class="row">
                     <div class="col-lg-4">

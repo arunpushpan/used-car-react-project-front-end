@@ -45,7 +45,7 @@ function Adminkey() {
                         <th>Name</th>
                         <th>Model</th>
                         <th>Fuel</th>
-                        <th>Kms Done</th>
+                        <th>Kms Driven</th>
                         <th>Transmission</th>
                         <th>Price</th>
                         <th>Action</th>
@@ -68,7 +68,7 @@ function Adminkey() {
 
                                 <td>
 <Link to={'/edit/'+item.id}>
-    <button className='btn btn-warning me-3' style={{borderRadius:'50%'}}> <i className="fa-solid fa-pen"></i></button>
+    <button className='btn btn-info me-3' style={{borderRadius:'50%'}}> <i className="fa-solid fa-pen text-light"></i></button>
 
 </Link  >                                             
 <button onClick={()=>carDelete(item.id)} className='btn btn-danger' style={{borderRadius:'50%'}}> <i className="fa-solid fa-trash"></i></button>
